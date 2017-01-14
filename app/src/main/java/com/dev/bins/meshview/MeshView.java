@@ -60,6 +60,8 @@ public class MeshView extends View {
         buildVerts();
         valueAnimator = ValueAnimator.ofInt(0, bitmapH);
         valueAnimator.setDuration(5000);
+//        valueAnimator.setRepeatMode(ValueAnimator.REVERSE);
+        valueAnimator.setRepeatCount(ValueAnimator.INFINITE);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
